@@ -1,0 +1,194 @@
+/* src/App.css - Professional Corporate Branding */
+
+/* --- 1. Brand Variables --- */
+:root {
+  /* Corporate Navy (Trust & Authority) */
+  --primary-color: #0F2C59; 
+  --primary-dark: #081A36;
+  
+  /* Muted Gold (Premium Standards) */
+  --accent-color: #C6A969; 
+  --accent-hover: #D4B877;
+  
+  /* Professional Neutrals */
+  --light-bg: #F8F9FA;
+  --text-dark: #333333;
+  --text-muted: #666666;
+  --white: #FFFFFF;
+}
+
+/* --- 2. Typography & Base --- */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* --- 3. Custom Utilities (The missing link) --- */
+.text-primary-custom {
+  color: var(--primary-color) !important;
+}
+
+.text-accent-custom {
+  color: var(--accent-color) !important;
+}
+
+.text-muted-custom {
+  color: var(--text-muted) !important;
+}
+
+.bg-primary-custom {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-accent-custom {
+  background-color: var(--accent-color) !important;
+}
+
+.bg-light-custom {
+  background-color: var(--light-bg) !important;
+}
+
+/* --- 4. Professional Buttons --- */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--white);
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: var(--white);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(198, 169, 105, 0.3);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-outline-light {
+  border: 2px solid rgba(255,255,255,0.8);
+  font-weight: 600;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border-color: var(--white);
+}
+
+/* --- 5. Custom Badges & Icons --- */
+.badge-custom {
+  background-color: rgba(198, 169, 105, 0.15); /* Low opacity gold */
+  color: var(--accent-color);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.icon-container, .icon-container-sm, .icon-container-lg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.icon-container { width: 64px; height: 64px; }
+.icon-container-sm { width: 48px; height: 48px; }
+.icon-container-lg { width: 80px; height: 80px; border-radius: 50%; }
+
+/* --- 6. Layout & Sections --- */
+.py-hero {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  position: relative;
+}
+
+.hero-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.3;
+}
+
+/* --- 7. Cards & Shadows --- */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--white);
+}
+
+.card-bordered {
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(15, 44, 89, 0.1);
+}
+
+.shadow-sm {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+}
+
+/* --- 8. Navigation Active State --- */
+.nav-link {
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.nav-link:hover {
+  color: var(--primary-color);
+}
+.nav-link-active {
+  color: var(--primary-color) !important;
+  font-weight: 700;
+}
+
+/* --- 9. Image Utility --- */
+.object-fit-cover {
+  object-fit: cover;
+}
